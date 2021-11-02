@@ -33,6 +33,6 @@ clean:
 
 .PHONY: test
 .SILENT: test
-test: deploy-local
+test:
 	dfx canister call profile whoami | egrep "principal" && echo 'PASS'
 	make clean
