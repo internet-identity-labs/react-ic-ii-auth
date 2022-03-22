@@ -1,0 +1,13 @@
+diff --git a/node_modules/@dfinity/auth-client/lib/cjs/index.js b/node_modules/@dfinity/auth-client/lib/cjs/index.js
+index 7bf9f56..fded6ab 100644
+--- a/node_modules/@dfinity/auth-client/lib/cjs/index.js
++++ b/node_modules/@dfinity/auth-client/lib/cjs/index.js
+@@ -156,7 +156,7 @@ class AuthClient {
+         this._eventHandler = this._getEventHandler(identityProviderUrl, Object.assign({ maxTimeToLive: defaultTimeToLive }, options));
+         window.addEventListener('message', this._eventHandler);
+         // Open a new window with the IDP provider.
+-        this._idpWindow = (_c = window.open(identityProviderUrl.toString(), 'idpWindow')) !== null && _c !== void 0 ? _c : undefined;
++        this._idpWindow = (_c = window.open(identityProviderUrl.toString(), 'idpWindow', 'toolbar=0,location=0,menubar=0')) !== null && _c !== void 0 ? _c : undefined;
+     }
+     _getEventHandler(identityProviderUrl, options) {
+         return async (event) => {
