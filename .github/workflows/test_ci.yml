@@ -1,0 +1,22 @@
+name: Test_CI
+on:
+  workflow_dispatch:
+  push:
+    branches:
+      - 'ci/test_ci'
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - name: Make script executable
+        run: chmod -v +x .github/workflows/*.sh
+      - name: Pull docker image
+        run: docker pull semenovoleksii/internet_identity:latest_runnable
+      - name: Show docker images
+        run: docker images | grep internet_identity
+      - name: Run docker image
+        run: docker run -d --rm --name dfx -v $(pwd):/github/ semenovoleksii/internet_identity:latest_runnable
+      - name: Run command inside dfx
+        run: docker exec -t dfx /github/.github/workflows/run_tests.sh

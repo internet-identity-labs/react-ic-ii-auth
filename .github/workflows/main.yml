@@ -1,5 +1,13 @@
 name: CI
-on: [pull_request, push, workflow_dispatch]
+on: 
+  pull_request:
+
+  push:
+    branches-ignore:
+      - 'ci/test_ci'
+
+  workflow_dispatch:
+
 jobs:
   test:
     runs-on: ubuntu-latest
