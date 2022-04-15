@@ -1,5 +1,13 @@
 # react-ic-ii-auth
 
+---
+
+## ⚠️ DEPRECATED ⚠️
+
+use [@internet-identity-labs/react-ic-ii-auth](https://www.npmjs.com/package/@internet-identity-labs/react-ic-ii-auth) insead
+
+---
+
 > React components to use DFINITY Internet Identity Authentication
 
 [![NPM](https://img.shields.io/npm/v/@identity-labs/react-ic-ii-auth.svg)](https://www.npmjs.com/package/@identity-labs/react-ic-ii-auth) [![JavaScript Style Guide](https://img.shields.io/badge/code_style-standard-brightgreen.svg)](https://standardjs.com)
