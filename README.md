@@ -4,7 +4,8 @@
 
 ## ⚠️ DEPRECATED ⚠️
 
-use [@internet-identity-labs/react-ic-ii-auth](https://www.npmjs.com/package/@internet-identity-labs/react-ic-ii-auth) insead
+use our npm package [@internet-identity-labs/react-ic-ii-auth](https://www.npmjs.com/package/@internet-identity-labs/react-ic-ii-auth) insead
+which is part of the [NFID-SDK](https://github.com/internet-identity-labs/NFID-SDK)
 
 ---
 
